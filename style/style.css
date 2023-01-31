@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "Retro Gaming";
+    src: url("fonts/RetroGaming_p.woff") format("woff");
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    
+    animation: fadein 5s;
+    margin: 30px 30px;
+}
+
+
+    header{
+        text-align: center;
+        justify-content: center;
+    }
+    ul{
+        list-style-type: none;
+    }
+    h2{
+        font-family: "Retro Gaming", serif;
+        text-align: center;
+    }
+    main{
+        margin: 20px;
+    }
+    .part{
+        border-bottom: solid;
+    }
+    .job{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+    .contact-flex{
+        display: none;
+        visibility: hidden;
+    }
+    .skills_list{
+        font-size: small;
+    }
+    .list_part{
+        font-weight: bold;
+    }
+    .hobby_tab{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .hobby_btn{
+        border-radius:50%;
+        width: 80px;;
+        height: 80px;
+        background-color:transparent;
+        background-position: center;
+        background-size: 50px;
+        border:2px solid #0aa9e3; 
+        background-repeat: no-repeat;
+    }
+    .game{
+        background-image: url("../img/Gamepad.png");
+    }
+    .photo{
+        background-image: url("../img/Camera.png");
+
+    }
+    .cinema{
+        background-image: url("../img/clip.png");
+    }
+    .book{
+        background-image: url("../img/book.png");
+    }
+    .music{
+        background-image: url("../img/music.png");
+    }
+    .leaf{
+        background-image: url("../img/leaf.png");
+    }
+    .history-tl-container{
+        width:50%;
+      }
+      .history-tl-container ul.tl{
+          margin:20px 0;
+          padding:0;
+      
+      }
+      .history-tl-container ul.tl li{
+          list-style: none;
+          min-height:50px;
+          border-left:1px dashed #86D6FF;
+          padding:0 0 50px 30px;
+          position:relative;
+      }
+      .history-tl-container ul.tl li:last-child{ border-left:0;}
+      .history-tl-container ul.tl li::before{
+          position: absolute;
+          left: -18px;
+          top: -5px;
+          content: " ";
+          border: 8px solid rgba(255, 255, 255, 0.74);
+          border-radius: 500%;
+          background: #258CC7;
+          height: 20px;
+          width: 20px;
+          transition: all 500ms ease-in-out;
+      
+      }
+      .history-tl-container ul.tl li:hover::before{
+          border-color:  #258CC7;
+          transition: all 1000ms ease-in-out;
+      }
+      ul.tl li .item-detail{
+          color:rgba(0,0,0,0.5);
+          font-size:12px;
+      }
+      ul.tl li .timestamp{
+          color: #8D8D8D;
+          font-size: 12px;
+      }
+      .exp_div{
+        display: flex;
+    }
+    .exp_time{
+        color: #0aa9e3;
+        font-size: 70px;
+        font-family: "Retro Gaming", serif;
+    }
+    .contact-me{
+        display: flex;
+    }
+    .contact_button{
+        border: none;
+        position: relative;
+        top: 30px;
+        left: 30px;
+        background-color: black;
+        color: #0aa9e3;
+        font-family: "Retro Gaming", serif;
+        font-size: 16px;
+    
+    }
+    .spec_body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .spec_btn{
+        border-radius:50%;
+        width: 100px;;
+        height: 100px;
+        background-color:transparent;
+        border:2px solid #0aa9e3;
+        background-position: center;
+        background-size: 50px;
+        background-repeat: no-repeat; 
+
+    }
+    .creativity{
+        background-image: url("../img/Ampoule.png");
+    }
+    .writting{
+        background-image: url("../img/Pen.png");
+    }
+    .design{
+        background-image: url("../img/brush.png");
+    }
+    .langues_list{
+        text-align: center;
+    }
+
+@media (min-width: 850px)/*850px pour la rotation de l'écran sur mobile*/{
+    body{
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-family: "Retro Gaming", serif;
+}
+header{
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+section{
+    width: 50%;
+    justify-content: space-between;
+    margin: 80px;
+}
+ul{
+    list-style-type: none;
+}
+
+.job{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.part{
+    border-bottom: solid;
+    text-align: justify;
+}
+
+.contact-flex{
+    visibility: visible;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 20%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.contact-content{
+    border-left: solid gray;
+    padding-left: 5px;
+}
+.left-column div{
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+.bio{
+    text-align: justify;
+}
+.spec_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.spec_btn{
+    width: 200px;;
+    height: 200px;
+    background-position: center;
+    background-size: 100px;
+}
+.creativity{
+    background-position: center;
+    background-size: 140px;
+}
+
+.spec_name{
+    font-family:"Retro Gaming", serif;
+    font-size: 24px;
+}
+.skills{
+    text-align: justify;
+    
+}
+.list_part{
+    padding-top: 20px;
+}
+.formation{
+    text-align: justify;
+}
+.exp{
+    text-align: justify;
+}
+.hobby{
+    text-align: justify;
+}
+.hobby_tab{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+}
+.hobby_btn{
+    width: 120px;;
+    height: 120px;
+    background-position: center;
+    background-size: 50px;
+}
+.exp_div{
+    display: flex;
+}
+.exp_time{
+    color: #0aa9e3;
+    font-size: 70px;
+    font-family: "Retro Gaming", serif;
+}
+.langues{
+    text-align: justify;
+}
+.langues_list{
+    text-align: center;
+}
+.langues_list img{
+    height: 120px;
+    width: 120px;
+}}
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+button:hover{
+    background-color: #0aa9e3;
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+.contact_button:hover{
+    background-color: #0aa9e3;
+    color: aliceblue;
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+.list_part:hover{
+    background-color: #0aa9e3;
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+.lang_part:hover{
+    transition: transform .2s;
+    transform: scale(1.5);
+}

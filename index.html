@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="img/MJ.png" />
+    <title>Martin Johnson</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Martin <strong>Johnson</strong></h1>
+            <div class="job"><h2>Game Designer</h2></div>
+        </div>
+        <div class="contact-flex">
+            <p>
+                Adresse
+            </p>
+            <p class="contact-content">
+                25 rue des mésanges
+                Bat. A apt. 112
+                33000 Bordeaux
+            </p>
+        </div>
+        <div class="contact-flex">
+            <p>
+                Contact
+            </p>
+            <p class="contact-content">
+                Martin@johnson.com
+                www.gamebymartin.com
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="left-column">
+            <div class="left-div bio">
+                <h2 class="part">Bio</h2>
+                <p>24 ans, célibataire. <br> Après avoir hérité de la collection gaming paternelle, j’ai étudié l’histoire du jeu vidéo par la pratique. Passionné par le gameplay et la création d’histoire, j’ai cherché à approfondir mes connaissances par le biais d’une formation au Cnam-Enjmin. Mon stage chez Ubisoft m’a permis de toucher du doigt mon rêve et mettre en pratique mes connaissances. Aujourd’hui, je souhaite rejoindre un studio ou une entreprise du jeu-vidéo aﬁn de développer des idées de jeux innovantes et originales.</p>
+            </div>
+            <div class="spec">
+                <h2 class="part">Spécialités</h2>
+                <div class="hobby_tab">  <! -- utilistion de la class hobby_btn car elle a les même que l'ancienne class spec_tab -- >
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=82CefQOjWrY'" class="spec_btn creativity"></button><p class="spec_name">Créativité</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=fibJT_cUqXM'" class="spec_btn writting"></button><p class="spec_name">Ecriture</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=yFQaH0FT0yo'" class="spec_btn design"></button><p class="spec_name">Design</p></div>
+                </div>
+            </div>
+            <div class="left-div skills">
+                <h2 class="part">Compétences</h2>
+                <ul class="skills_list">
+                    <li class="list_part">Scénarisation <img src="img/5hearts.png" class="float-end" alt="5heartsline"></li>
+                    <li class="list_part">Unity <img src="img/4hearts.png" class="float-end" alt="4heartsline"></li>
+                    <li class="list_part">Premiere CC <img src="img/4hearts.png" class="float-end" alt="4heartsline"></li>
+                    <li class="list_part">Photoshop CC <img src="img/5hearts.png" class="float-end" alt="5heartsline"></li>
+                    <li class="list_part">Illustrator CC <img src="img/3hearts.png" class="float-end" alt="3heartsline"></li>
+                    <li class="list_part">GameMaker <img src="img/4hearts.png" class="float-end" alt="4heartsline"></li>
+                    <li class="list_part">Blender <img src="img/2hearts.png" class="float-end" alt="2heartsline"></li>
+                </ul>
+            </div>
+            <div class="left-div langues">
+                <h2 class="part">Langues</h2>
+                <div class="langues_list">
+                    <img src="img/FR.PNG" alt="Frenchlanguage" class="lang_part">
+                    <img src="img/UK.PNG" alt="Englishlanguage" class="lang_part">
+                    <img src="img/ES.PNG" alt="Spanishlanguge" class="lang_part">
+                </div>
+            </div>
+        </section>
+        <section class="right-column">
+            <div class="formation">
+                <h2 class="part">Formation</h2>
+                <div class="history-tl-container">
+                    <ul class="tl">
+                      <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="item-title">Licence écriture du Jeu Vidéo De septembre 2019 à septembre 2020</div>
+                        <div class="item-detail">Cnam-Enjmin Angoulême</div>
+                      </li>
+                      <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="item-title">BTS Développeur web De septembre 2017 à septembre 2019</div>
+                        <div class="item-detail">CESI Bordeaux</div>
+                      </li>
+                      <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="item-title">Baccalauréat S Juin 2016 </div>
+                        <div class="item-detail">Lycée Montesquieu Bordeaux</div>
+                      </li>
+                  
+                    </ul>
+                  
+                  </div>
+            </div>
+            <div class="exp">
+                <h2 class="part">Experiences professionnelle</h2>
+                   <div class="exp_div"><span class="exp_time">3</span> <p> <br> <strong>mois</strong> de stage game design <br> <strong>UBISOFT Bordeaux</strong>  <br>Juin à aout 2019</p> </div> 
+                  <div class="exp_div"> <span class="exp_time">2</span> <p><br> <strong>ans</strong> développeur alternance <br> <strong>Webagency Bordeaux</strong> <br> De septembre 2017 à septembre 2019</p> </div> 
+            </div>
+            <div class="hobby">
+                <h2 class="hooby_title part">Hobbies</h2>
+                <div class="hobby_tab"> 
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=n5ZsStqUFXQ'" class="hobby_btn game"></button><p>Jeux-vidéo</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=kjKgCYBVSTY'" class="hobby_btn photo"></button><p>Photo</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=yOWUCoQK2RI'" class="hobby_btn cinema"></button><p>Cinéma</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=O-Em-Tqll3k'" class="hobby_btn book"></button><p>Roman SF</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=FrG4TEcSuRg'" class="hobby_btn music"></button><p>K-Pop</p></div>
+                    <div><button onclick="location.href='https://www.youtube.com/watch?v=zRaYoDFYEZ4'" class="hobby_btn leaf"></button><P>Botanique</P></div> 
+                </div>
+            </div>
+            <div class="contact-me">
+                <div class="btn"><button onclick="location.href='https://www.youtube.com/watch?v=xvFZjo5PgG0'" class="contact_button">Contactez-moi</button></div>
+                <img src="img/MJ.png" alt="MartinJohnson">
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
